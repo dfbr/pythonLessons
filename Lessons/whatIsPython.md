@@ -17,6 +17,14 @@ We use Python for many reasons. Some of the best ones are:
 - It is generally considered easy to learn
 - Lots of people have written Python that you can use and adapt for your needs
 
+## Which version of Python?
+
+**Version 3**. 
+
+Python has been in development since 1991. There are two main versions of Python. We will always be using version **3** of Python. If you are looking for online help, tips, courses etc, make sure they are for version 3. 
+
+Version 2 is now not recommended and is used only for existing projects.
+
 ## How do I *do* Python?
 
 Python can be used in many different ways. We will be using *Jupyter Notebooks*. This is a way of writing Python where you can quickly build scripts and see the output
@@ -65,6 +73,6 @@ hour, minute, seconds = gettime()
 print(f"The current time is {hour}:{minute}:{seconds}")
 ```
 
-Want to see the output? [look here](link tbc)<!--
+Want to see the output? [Google Colab](http://colab.research.google.com/github/dfbr/pythonLessons/blob/main/Notebooks/currentTime.ipynb)<!--
 https://stackoverflow.com/questions/52131683/open-google-colab-notebook-from-url 
 -->
