@@ -2,31 +2,20 @@
 
 This site contains the resources for the python lessons delivered by Dave Rowan @ UiB.
 
+Computers are great at doing things for us. To get the most of them, it helps if we can ask them to do things for us. This course will help you do that by teaching you the fundamentals of Python, a programming language.
+
 ## Aims of the course
 
-- [Understand what Python is](Lessons/whatIsPython.md)
-- [Know what a Jupyter notebook is](Lessons/jupyterNotebook.md)
-  <!--- Be able to create an online Jupyter notebook-->
+- Understand [what Python is](Lessons/whatIsPython.md)
+- Know what a [Jupyter notebook is](Lessons/jupyterNotebook.md)
 - A quick [play with Jupyter](Lessons/playWithJupyter.md)
 - Understand some [key concepts of Python](Lessons/keyConcepts.md)
-  <!--- Python is cAsE sEnSiTiVe
-  - Whitspace matters
-  - What is a comment?
-  - What is a variable?
-- 
-  - What is a list?
-  - What is a dictionary?
-  - How do I make choices?
-    - If statement
-  - What is a loop?
-    - `for i in list`
-    - `while True`
-  - How to use other people's code
-  - Know how to use other people's Python code-->
+- Use Python to [make choices](Lessons/makeChoices.md)
+- Use Python to do the same thing [again and again](Lessons/loops.md)
+- Use [other people's code](Lessons/externalCode.md)
 - Be able to start and develop a Python script in a Jupyter notebook
-- Know how to investigate programming errors
-
-- Know the difference between running Python in a Jupyter notebook, as a script on your computer and on someone else's computer
+- Know how to start investigating programming errors
+- Use your Jupyter notebook elsewhere
 
 ## Pre-requisites
 

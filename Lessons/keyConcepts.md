@@ -138,6 +138,8 @@ bergenWeatherStation = {"windSpeed": 14,
 
 This becomes especially useful when you have many weather stations because you collet them together in a list of dictionaries.
 
+The name of the attribute is called the **key** (e.g. `windSpeed` in our example above). The speed of the wind is called the `value` (e.g. 14 in our example)
+
 Let's [try it out](http://colab.research.google.com/github/dfbr/pythonLessons/blob/main/Notebooks/dictionaries.ipynb)!
 
 ## Key points
