@@ -4,8 +4,8 @@ This site contains the resources for the python lessons delivered by Dave Rowan 
 
 ## Aims of the course
 
-- [Understand what Python is](whatIsPython.md)
-- [Know what a Jupyter notebook is](jupyterNotebook.md)
+- [Understand what Python is](Lessons/whatIsPython.md)
+- [Know what a Jupyter notebook is](Lessons/jupyterNotebook.md)
   <!--- Be able to create an online Jupyter notebook-->
 - Understand some key concepts of Python
   <!--- Python is cAsE sEnSiTiVe
@@ -42,7 +42,7 @@ There will be a drop-in session (date and location TBC). Please come along with 
 
 ## Other resources
 
-The internet is full of resources to help you learn Python. I have collected some good ones on the [resources](resources.md) page.
+The internet is full of resources to help you learn Python. I have collected some good ones on the [resources](Lessons/resources.md) page.
 
 ## Feedback
 
