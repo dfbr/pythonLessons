@@ -8,7 +8,6 @@ Computers are great at doing things for us. To get the most of them, it helps if
 
 - Understand [what Python is](Lessons/whatIsPython.md)
 - Know what a [Jupyter notebook is](Lessons/jupyterNotebook.md)
-- A quick [play with Jupyter](Lessons/playWithJupyter.md)
 - Understand some [key concepts of Python](Lessons/keyConcepts.md)
 - Use Python to [make choices](Lessons/makeChoices.md)
 - Use Python to do the same thing [again and again](Lessons/loops.md)
@@ -37,7 +36,6 @@ The internet is full of resources to help you learn Python. I have collected som
 
 ## Feedback
 
-Please provide feedback on the course, content, delivery or direct questions at any point to [david.rowan@uib.no](mailto:david.rowan@uib.no)
+Please provide feedback on the course, content, delivery or direct questions at any point to [david.rowan@uib.no](mailto:david.rowan@uib.no).
 
-
-<!-- ![Sample Video](img/markdown_video.mp4) -->
+If you spot errors or want to make improvements to this course, please submit a pull request.
