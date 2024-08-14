@@ -6,6 +6,7 @@
 - [Raspberry Pi tutorials](https://www.raspberrypi.org/courses/learn-python) on Python and programming topics 
 - [Software carpentry tutorial](https://swcarpentry.github.io/python-novice-inflammation/)
 - [Plotting and Programming in Python](https://swcarpentry.github.io/python-novice-gapminder/) from Software Carpentries
+- [W3Schools Python course](https://www.w3schools.com/python/default.asp)
 
 ## Videos
 

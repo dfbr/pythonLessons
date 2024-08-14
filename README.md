@@ -7,11 +7,13 @@ This site contains the resources for the python lessons delivered by Dave Rowan 
 - [Understand what Python is](Lessons/whatIsPython.md)
 - [Know what a Jupyter notebook is](Lessons/jupyterNotebook.md)
   <!--- Be able to create an online Jupyter notebook-->
-- Understand some key concepts of Python
+- A quick [play with Jupyter](Lessons/playWithJupyter.md)
+- Understand some [key concepts of Python](Lessons/keyConcepts.md)
   <!--- Python is cAsE sEnSiTiVe
   - Whitspace matters
   - What is a comment?
   - What is a variable?
+- 
   - What is a list?
   - What is a dictionary?
   - How do I make choices?

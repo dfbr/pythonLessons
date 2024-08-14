@@ -11,11 +11,18 @@ Like with all programming languages, with Python:
 
 ## Why Python?
 
-We use Python for many reasons. Some of the best ones are:
+We use Python for many reasons. Some of the best reasons are:
 - It is used in many different places
+  - Industry
+  - Academia
+  - Hobbies
 - It is used for many different tasks
+  - Data visualisation
+  - Processing data
+  - Managing computers
 - It is generally considered easy to learn
 - Lots of people have written Python that you can use and adapt for your needs
+  - These could be scripts you can use directly or modules/libraries that you can integrate into your programs
 
 ## Which version of Python?
 
@@ -73,6 +80,12 @@ hour, minute, seconds = gettime()
 print(f"The current time is {hour}:{minute}:{seconds}")
 ```
 
-Want to see the output? [Google Colab](http://colab.research.google.com/github/dfbr/pythonLessons/blob/main/Notebooks/currentTime.ipynb)<!--
+Want to see the output? Let's look together on  [Google Colab](http://colab.research.google.com/github/dfbr/pythonLessons/blob/main/Notebooks/currentTime.ipynb).<!--
 https://stackoverflow.com/questions/52131683/open-google-colab-notebook-from-url 
 -->
+
+## Key points
+
+- Python is a programming language
+- We will use version 3
+- We are going program using Jupyter notebooks in [Google colab](https://colab.research.google.com/).
