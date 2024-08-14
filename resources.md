@@ -4,6 +4,8 @@
 
 - [Python tutorial](https://docs.python.org/3/tutorial/index.html) from the creators of python
 - [Raspberry Pi tutorials](https://www.raspberrypi.org/courses/learn-python) on Python and programming topics 
+- [Software carpentry tutorial](https://swcarpentry.github.io/python-novice-inflammation/)
+- [Plotting and Programming in Python](https://swcarpentry.github.io/python-novice-gapminder/) from Software Carpentries
 
 ## Videos
 
