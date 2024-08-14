@@ -10,7 +10,8 @@
 
 ## Videos
 
-- [What is python](https://www.youtube.com/watch?v=Y8Tko2YC5hA)
+[![What is python](https://img.youtube.com/vi/Y8Tko2YC5hA/maxresdefault.jpg)](https://www.youtube.com/watch?v=Y8Tko2YC5hA)
+- 
 
 ## Exercises
 

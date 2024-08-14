@@ -5,39 +5,9 @@ As we are going to used it, the key concepts of Python are very similar to many 
 ## Which concepts will we learn?
 
 - Comments
-- Syntax
-  - Case sensitivity
-  - White space matters
 - Variables
-  - What is a variable?
-  - How do we assign variables?
-  - How do we change variables?
-  - What type of variables can we have?
 - Lists
-  - What is a list?
-  - What do we use lists for?
-  - How do we assign lists?
-  - How do we access a list item?
-  - How do we add an item to a list?
-  - How do we remove an item from a list?
-  - Can we select more than one list item?
 - Dictionaries
-  - What is a dictionary?
-  - What do we use disctionaries for?
-  - How do we access a dictionary value?
-  - How do we add a dictionary item?
-  - How do we remove a dictionary item?
-- Making choices
-  - Why would we want to make a choice?
-  - What sort of conditions can we use?
-  - What happens after we've made the decision?
-- Repeating actions (loops)
-  - for loops
-  - while loops
-- Using other people's code
-  - Install a module
-  - Import a module to a script
-  - Use a function
 
 ## Comments
 
@@ -49,20 +19,11 @@ In Python we make a comment by using a `#` character.
 
 The `#` can appear anywhere on a line and everything after it is ignored and for the human only.
 
-There isn't much to try with comments so there are no exercises here but we'll use comments in our next section...
+There isn't much to try with comments so there are no exercises here but we'll use comments in our next section
 
-<!--
-I don't think we need a section on this.
-## Syntax
+### Remember
 
-Syntax in a programming language is the set of rules to make sure your program is understandable to the computer. This includes:
-- How you indent your code
-- The punctuation that you use
-- The letters and symbols that you use
-- Some of the words that you (don't) use
-
-Let's [try it out]()
--->
+**Comments are a present to your future self. Use them and be thankful when you get to read them later!**
 
 ## Variables
 
@@ -149,7 +110,3 @@ Let's [try it out](http://colab.research.google.com/github/dfbr/pythonLessons/bl
 - Variables hold a value that you can use in your program
 - A list is a group of variables
 - A dictionary is a way of storing a variable with different keys and values
-
-## Additional resources
-
-- [Variable name rules](https://www.w3schools.com/python/gloss_python_variable_names.asp)

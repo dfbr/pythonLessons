@@ -2,12 +2,13 @@
 
 Python is a programming language. 
 
-A programming language is a way of asking a computer to do something. The thing you're asking the computer to do can be called a program or a script.
+A programming language is a way of asking a computer to do something. The thing you're asking the computer to do can be called "code", a "program" or a "script". I'll probably use all of these terms as we go through the course.
 
 Like with all programming languages, with Python:
 - The computer will do exactly what you ask it to
 - The computer cannot guess and is not ambiguous!
   - You must explain each step of a process to the computer, you can't skip step that are *obvious* because they are not obvious to the computer
+- If it doesn't understand what you've asked it to do, it will tell you. This may or may not be a helpful message.
 
 ## Why Python?
 
@@ -20,6 +21,7 @@ We use Python for many reasons. Some of the best reasons are:
   - Data visualisation
   - Processing data
   - Managing computers
+  - Hobbies
 - It is generally considered easy to learn
 - Lots of people have written Python that you can use and adapt for your needs
   - These could be scripts you can use directly or modules/libraries that you can integrate into your programs
@@ -56,7 +58,7 @@ Email: m.pitkin@lancaster.ac.uk
 Date: 22/06/2020
 """
 
-# import the required modules
+# import the required modules (this is someone else's code, not Matthew's)
 import datetime
 
 
