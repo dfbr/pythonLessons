@@ -1,5 +1,14 @@
 # Resources to help you learn Python
 
+## Completed notebooks from all of the exercises in this course
+
+- variables
+- lists
+- dictionaries
+- choices
+- loops
+- other people's code
+
 ## General Python tutorials
 
 - [Python tutorial](https://docs.python.org/3/tutorial/index.html) from the creators of python

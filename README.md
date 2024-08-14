@@ -15,6 +15,7 @@ Computers are great at doing things for us. To get the most of them, it helps if
 - Be able to start and develop a Python script in a Jupyter notebook
 - Know how to start investigating programming errors
 - Use your Jupyter notebook elsewhere
+- Understand a more complex example<!--This is doing some data visualisation, plotting points on a map from a csv file. -->
 
 ## Pre-requisites
 
