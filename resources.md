@@ -1,6 +1,6 @@
 # Resources to help you learn Python
 
-## Tutorials
+## General Python tutorials
 
 - [Python tutorial](https://docs.python.org/3/tutorial/index.html) from the creators of python
 - [Raspberry Pi tutorials](https://www.raspberrypi.org/courses/learn-python) on Python and programming topics 
@@ -9,6 +9,8 @@
 - [W3Schools Python course](https://www.w3schools.com/python/default.asp)
 
 ## Videos
+
+- [What is python](https://www.youtube.com/watch?v=Y8Tko2YC5hA)
 
 ## Exercises
 
@@ -22,3 +24,4 @@
     - Collaborating with others on your programs
     - Sharing your work with others
     - Using the work of others as a basis for your work
+- [Introduction to Computer Science](https://pll.harvard.edu/course/cs50-introduction-computer-science) from Harvard University
