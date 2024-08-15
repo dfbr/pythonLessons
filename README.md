@@ -7,12 +7,11 @@ Computers are great at doing things for us. To get the most of them, it helps if
 ## Aims of the course
 
 - Understand [what Python is](Lessons/whatIsPython.md)
-- Know what a [Jupyter notebook is](Lessons/jupyterNotebook.md)
+- Know what a [Jupyter notebook is](Lessons/jupyterNotebook.md) and be able to use notebooks
 - Understand some [key concepts of Python](Lessons/keyConcepts.md)
 - Use Python to [make choices](Lessons/makeChoices.md)
 - Use Python to do the same thing [again and again](Lessons/loops.md)
 - Use [other people's code](Lessons/externalCode.md)
-- Be able to start and develop a Python script in a Jupyter notebook
 - Know how to start investigating programming errors
 - Use your Jupyter notebook elsewhere
 - Understand a more complex example<!--This is doing some data visualisation, plotting points on a map from a csv file. -->
