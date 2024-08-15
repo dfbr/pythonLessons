@@ -42,6 +42,20 @@ myThirdVariableName = myVariableName + mySecondVariableName
 print(myThirdVariableName)
 ```
 
+The value of a variable is not fixed so you can change it based on the outcome of a statement.
+
+```python
+myFavouriteNumber = 4
+
+# now lets make it one bigger
+myFavouriteNumber = myFavouriteNumber + 1
+
+# now we can double it
+myFavouriteNumber += myFavouriteNumber
+```
+
+The `+=` operator is shorthand for saying "add what's on the right to the variable on the left". There are similar operators for other maths operations.
+
 The variable name is case sensitive so `MYVARIABLENAME` and `myvariablename` are two different variables.
 
 Let's [try it out](http://colab.research.google.com/github/dfbr/pythonLessons/blob/main/Notebooks/variables.ipynb)!
