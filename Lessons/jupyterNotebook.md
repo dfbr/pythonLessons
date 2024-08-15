@@ -6,7 +6,9 @@ The first thing to do is open Google Colab at [https://colab.research.google.com
 
 Now lets have a look at an [example notebook](http://colab.research.google.com/github/dfbr/pythonLessons/blob/main/Notebooks/jupyter.ipynb).
 
-Throughout this course, we'll be using links directly to examples for exercises and examples. You will need to click `Run anyway` when you open these notebooks.
+Throughout this course, we'll be using links directly to examples for exercises and examples (like the one above). 
+
+You will probably need to click `Run anyway` when you open these notebooks.
 
 ## Key points
 
