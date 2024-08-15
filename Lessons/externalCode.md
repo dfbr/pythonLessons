@@ -16,9 +16,34 @@ People have written code that can be `import`ed to your script and you can then 
 Here is an example:
 
 ```python
-import requests # this gets the "requests" module ready to use
-response = requests.get('')
+# first we import "pandas" with the shortened name "pd" (this just means we need to type less)
+import pandas as pd
+
+# now we use the function "read_csv()" from pandas to download a file with earthquake data in it
+# we want to use this data so we assign it to a variable called df (short for dataframe, a pandas convention)
+df = pd.read_csv('https://corgis-edu.github.io/corgis/datasets/csv/earthquakes/earthquakes.csv')
+
+# to show it we got the data, lets print the first record
+print(df.iloc[0])
 
 ```
 
+There are LOTS of modules for many, many different things. In fact, there are so many it's impossible to know what they all do so you will need to search for the right module for your task.
+
+Some common modules that _may_ be useful are:
+- sys
+- datetime
+- matplotlib
+- pandas
+- requests
+- beautifulSoup
+
+Let's [try it out](http://colab.research.google.com/github/dfbr/pythonLessons/blob/main/Notebooks/externalCode.ipynb)
+
 ## Using someone else's script
+
+## Key points
+
+- We can use modules to make it easier to perform common tasks
+- We will need to search for a module
+- We will need to read the documentation to use a module
