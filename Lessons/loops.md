@@ -39,3 +39,8 @@ for item in myList:
 ```
 
 Let's [play with for loops](http://colab.research.google.com/github/dfbr/pythonLessons/blob/main/Notebooks/forLoops.ipynb)
+
+## Key points
+
+- We use a `while` loop when we want to do the same thing **while** a condition is met
+- We use a a `for` loop when we want to do the same thing **for** every item in a list
