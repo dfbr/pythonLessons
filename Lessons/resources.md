@@ -20,6 +20,15 @@
 ## Videos
 
 [![What is python](https://img.youtube.com/vi/Y8Tko2YC5hA/maxresdefault.jpg)](https://www.youtube.com/watch?v=Y8Tko2YC5hA)
+
+[![Data types in Python](https://img.youtube.com/vi/ppsCxnNm-JI/maxresdefault.jpg)](https://www.youtube.com/watch?v=ppsCxnNm-JI)
+
+[![Variables and data types in Python](https://img.youtube.com/vi/LKFrQXaoSMQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=LKFrQXaoSMQ)
+
+[![If statements](https://img.youtube.com/vi/-BOBedcjySI/maxresdefault.jpg)](https://www.youtube.com/watch?v=-BOBedcjySI)
+
+
+
 - 
 
 ## Exercises
