@@ -24,7 +24,7 @@ We use Python for many reasons. Some of the best reasons are:
   - Hobbies
 - It is generally considered easy to learn
 - Lots of people have written Python that you can use and adapt for your needs
-  - These could be scripts you can use directly or modules/libraries that you can integrate into your programs
+  - These could be scripts you can use directly or packages/libraries that you can integrate into your programs
 
 ## Which version of Python?
 
@@ -58,7 +58,7 @@ Email: m.pitkin@lancaster.ac.uk
 Date: 22/06/2020
 """
 
-# import the required modules (this is someone else's code, not Matthew's)
+# import the required packages (this is someone else's code, not Matthew's)
 import datetime
 
 
