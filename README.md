@@ -13,7 +13,7 @@ Computers are great at doing things for us. To get the most of them, it helps if
 - Use [other people's code](Lessons/externalCode.md)
 - Know how to start [investigating programming errors](Lessons/programmingErrors.md)
 - Use your [Jupyter notebook elsewhere](Lessons/exportScript.md)
-- Understand a more complex example<!--This is doing some data visualisation, plotting points on a map from a csv file. -->
+- Understand a [more complex example](Lessons/complexExample.md)<!--This is doing some data visualisation, plotting points on a map from a csv file. -->
 
 ## Pre-requisites
 
