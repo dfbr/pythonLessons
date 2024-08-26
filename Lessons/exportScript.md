@@ -26,4 +26,4 @@ To get out of the Python *interpreter* you need to issue the command `exit()`.
 
 If you have Python installed you simply issue the command `python <scriptFileName>` (or `python3` if that's the name for Python on your computer)
 
-Let's [try it out]()
+Let's [try it out](http://colab.research.google.com/github/dfbr/pythonLessons/blob/main/Notebooks/exportScript.ipynb)
