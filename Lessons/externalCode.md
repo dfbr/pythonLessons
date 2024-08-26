@@ -32,20 +32,37 @@ There are LOTS of packages for many, many different things. In fact, there are s
 
 Some common packages that _may_ be useful are:
 - sys
+  - For doing things like listing directory contents
 - datetime
+  - For handling dates and times including finding differences between dates and times
 - matplotlib
+  - For making data visualisations
 - pandas
+  - For doing data analysis
 - requests
-- beautifulSoup
+  - For getting files from the internet
 
-In colab, these packages are already installed. If you are working on your own computer, you may need to install them yourself using the [`pip` command](https://packaging.python.org/en/latest/tutorials/installing-packages/).
+In colab, most these packages are already installed. If you are working on your own computer, you may need to install them yourself using the [`pip` command](https://packaging.python.org/en/latest/tutorials/installing-packages/).
+
+If you want to use a package in colab that isn't already installed, you can still use `pip` to install it but you need to add an `!` before the `pip` like this: `!pip install matplotlib`
 
 Let's [try it out](http://colab.research.google.com/github/dfbr/pythonLessons/blob/main/Notebooks/externalCode.ipynb)
 
 ## Using someone else's script
+
+You can of course use your favourite search engine to find a script that does what you want to do. But when things get specific it's unlikely that you'll find an exact match. You can copy a Python script into a blank notebook and start editing it from there. 
+
+Try it with this:
+- Use [example 4](https://medium.com/@estebanpiero/10-useful-python-scripts-for-everyday-tasks-b0d74f2ea62c) on this web page and copy it to a fresh notebook.
+- Make a new directory with some image files in it
+- Use the example script to resize the images in your directory to 500 x 500
+- Save them with the the word `resized_` prepended to the filename
+
+[Try it out](https://colab.research.google.com/).
 
 ## Key points
 
 - We can use packages to make it easier to perform common tasks
 - We will need to search for a package
 - We will need to read the documentation to use a package
+- When we use someone else's script, we may need to edit it
