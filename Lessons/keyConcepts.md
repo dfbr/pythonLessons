@@ -5,13 +5,13 @@ As we are going to used it, the key concepts of Python are very similar to many 
 ## Which concepts will we learn?
 
 - Comments
-- Variables
+- Variables (and data types)
 - Lists
 - Dictionaries
 
 ## Comments
 
-One of the most important things in a program isn't the instructions that you give to the computer, it's the insight you give to your future self! These are comments in the code.
+One of the most important things in a program isn't the instructions that you give to the computer, it's the insight you give to your future self! These are **comments** in the code.
 
 The computer completely ignores comments. They are only for the human.
 
@@ -19,11 +19,19 @@ In Python we make a comment by using a `#` character.
 
 The `#` can appear anywhere on a line and everything after it is ignored and for the human only.
 
+It's a good idea to make comments for the following sorts of things:
+- To show an outline structure to your script
+- To describe how you're doing something
+- To give more description to a function
+- To give a reader important information such as options in a script
+
+But comments are mainly for *you* so write yourself comments whenever you feel they are necessary.
+
 There isn't much to try with comments so there are no exercises here but we'll use comments in our next section
 
 ### Remember
 
-**Comments are a present to your future self. Use them and be thankful when you get to read them later!**
+**Comments are a gift to your future self. Use them and be thankful when you get to read them later!**
 
 ## Variables
 
@@ -91,15 +99,15 @@ Let's [try it out](http://colab.research.google.com/github/dfbr/pythonLessons/bl
 
 ## Dictionaries
 
-We have a group of variables that belong together, but what about a variable that has a set of values? Yes, there is a Python concept for this too and it's called a dictionary.
+We have a group of variables that belong together, but what about a variable that has a set of values that belong together? Yes, there is a Python concept for this too and it's called a dictionary.
 
 What sort of things belong together? Think about a weather station. This could have a set of different values that are collected at the same place and time.
 
 ```python
-windSpeed = 14
-windDirection = 189
-precipitation = 14
-temperature = 12.8
+bergenWeatherStationWindSpeed = 14
+bergenWeatherStationWindDirection = 189
+bergenWeatherStationPrecipitation = 14
+bergenWeatherStationTemperature = 12.8
 ```
 
 It would be nice to hold all of these in one variable. We can do that with a dictionary instead:
@@ -122,5 +130,11 @@ Let's [try it out](http://colab.research.google.com/github/dfbr/pythonLessons/bl
 - Use `#` to make a comment to your future self (and others who may read your code)
 - If the syntax is wrong, your program won't work as you hope it will. The computer _should_ tell you that _something_ is wrong
 - Variables hold a value that you can use in your program
-- A list is a group of variables
+  - Every variable has a `type`
+- A list is a set of variables
 - A dictionary is a way of storing a variable with different keys and values
+
+# Extra resources
+
+- [Lists](https://www.w3schools.com/python/python_lists.asp)
+- [Dictionaries](https://www.w3schools.com/python/python_dictionaries.asp)
