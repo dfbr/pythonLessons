@@ -1,7 +1,7 @@
 # Loops (or doing the same thing over and over again)
 
 Often when programming, we want to do the same many times. This is often:
-- the same thing until a condition is met
+- the same thing while a condition is met
 - the same thing for every item on a list
 
 Python, like most programming languages, has tools to help you do this. They are known as `while` loops and `for` loops.
@@ -24,7 +24,7 @@ Let's [try it out](http://colab.research.google.com/github/dfbr/pythonLessons/bl
 
 A `for` loop is slightly different in that it will do the same thing for every item of a list. When would you use this?
 - You have a list of measurements from different weather stations and you want to do the same thing with each of the measurements
-- You have a list of class attendees and you want to send all of them a feedback survey
+- You have a list of class attendees and you want to send all of them a personalised feedback survey
 - Anything else where you want to do the same thing to a set of data
 
 Here's the example:
@@ -44,3 +44,8 @@ Let's [play with for loops](http://colab.research.google.com/github/dfbr/pythonL
 
 - We use a `while` loop when we want to do the same thing **while** a condition is met
 - We use a a `for` loop when we want to do the same thing **for** every item in a list
+
+## Extra resources
+
+- [While loops](https://www.geeksforgeeks.org/python-while-loop/)
+- [For loops](https://www.geeksforgeeks.org/python-for-loops/)
