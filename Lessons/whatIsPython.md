@@ -2,13 +2,14 @@
 
 Python is a programming language. 
 
-A programming language is a way of asking a computer to do something. The thing you're asking the computer to do can be called "code", a "program" or a "script". I'll probably use all of these terms as we go through the course.
+A programming language is a way of asking a computer to do something. The thing you're asking the computer to do can be called "code", a "program" or a "script". They are all subtley different but for our purposes they all mean things that you ask the computer to do. I'll probably use all of these terms as we go through the course.
 
 Like with all programming languages, with Python:
-- The computer will do exactly what you ask it to
-- The computer cannot guess and is not ambiguous!
+- The computer will do **exactly** what you ask it to
+- The computer **cannot guess** and is **not ambiguous**!
   - You must explain each step of a process to the computer, you can't skip step that are *obvious* because they are not obvious to the computer
-- If it doesn't understand what you've asked it to do, it will tell you. This may or may not be a helpful message.
+- If it doesn't understand what you've asked it to do, it will tell you. 
+  - This may or may not be a helpful message!
 
 ## Why Python?
 
@@ -32,13 +33,14 @@ We use Python for many reasons. Some of the best reasons are:
 
 Python has been in development since 1991. There are two main versions of Python. We will always be using version **3** of Python. If you are looking for online help, tips, courses etc, make sure they are for version 3. 
 
-Version 2 is now not recommended and is used only for existing projects.
+Version 2 is now not recommended and is used only for old projects.
 
 ## How do I *do* Python?
 
-Python can be used in many different ways. We will be using *Jupyter Notebooks*. This is a way of writing Python where you can quickly build scripts and see the output
+Python can be used in many different ways. We will be using **Jupyter Notebooks** and running them in **Google Colab**. This is a way of writing Python where you can quickly build scripts and see the output.
 
 Python can also be used as:
+- A Jupyter notebook that you run on your own computer (or someone else's)
 - A script that you run directly on your computer
   - We will not be going through installing Python on your computer in this course but if you want to do so you can find  [instructions](installPython.md)
 - A script that you run on *someone else's computer*
@@ -47,7 +49,9 @@ Python can also be used as:
 
 ## What does a Python script look like?
 
-A Python script is a text file so you, as a human can read it. The following is a complete Python script
+A Python script is a text file so you, as a human can read it as well as the computer being able to interpret it. 
+
+The following is a complete Python script
 
 ```python
 """
