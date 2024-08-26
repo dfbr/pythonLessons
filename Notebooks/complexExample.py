@@ -26,7 +26,7 @@ headers = {
 }
 
 # next we use the "get" method to retrieve a list of the available images
-logger.info(f'Getting https://api.met.no/weatherapi/geosatellite/1.4/available')
+# logger.info(f'Getting https://api.met.no/weatherapi/geosatellite/1.4/available')
 try:
     response = requests.get("https://api.met.no/weatherapi/geosatellite/1.4/available",headers=headers)
 except Exception as e:
@@ -111,12 +111,12 @@ for image in availableImages['available']['query']:
         filename = f'{baseDir}/satelliteImages/{imageSizeDesired}/{area}/{imageType}/{imageDate}.png'
         if not os.path.exists(filename):
             newFiles = True
-            logger.info(f"Getting {imageUrl} to save to {filename}")
+            # logger.info(f"Getting {imageUrl} to save to {filename}")
             response = requests.get(imageUrl, stream=True, headers=headers)
             logger.info(f"Got {imageUrl} with status code {response.status_code}")
 
             if response.ok:    
-                logger.info(f"Writing {imageUrl} to save to {filename}")            
+                # logger.info(f"Writing {imageUrl} to save to {filename}")            
                 with open(filename, 'wb') as out_file:
                     response.raw.decode_content = True
                     shutil.copyfileobj(response.raw, out_file)
