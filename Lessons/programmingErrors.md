@@ -8,5 +8,5 @@ In this exercise I've set up a Jupyter notebook with some _classic_ programming 
 
 ## Resources
 
-[google.no](https://google.no)
-[Stack Overflow](https://stackoverflow.com/)
+- [google.no](https://google.no)
+- [Stack Overflow](https://stackoverflow.com/)
