@@ -9,7 +9,7 @@ if it's morning:
 if it's afternoon:
     Drink water
 if it's evening:
-    Drink more water
+    Drink whisky
 if it's none of these:
     Sleep
 ```
@@ -24,14 +24,14 @@ if timeOfDay == "morning":
 elif timeOfDay == "afternoon":
     print("Just water right now")
 elif timeOfDay == "evening":
-    print("Water again please.")
+    print("Whisky please.")
 else:
     print("What are you doing awake?")
 ```
 
 We need to give Python a **condition** that it can evaluate. This is the `timeOfDay == "morning"` part. 
 
-Note the double `=` sign. This doesn't assign a value to a variable, instead it asks the question **is the value on the left equal to the value on the right?**.
+Note the double `==` sign. This doesn't assign a value to a variable, instead it asks the question **is the value on the left equal to the value on the right?**.
 
 The condition doesn't have to be `==`. It can be anything that evaluates to **True** or **False**.
 
