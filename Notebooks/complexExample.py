@@ -2,7 +2,7 @@
 
 # First we need to get a list of the images that are available.
 baseDir = "."
-imageSizeDesired = "normal" # options are "small" or "normal"
+imageSizeDesired = ["small","normal"] # options are "small" or "normal"
 sleepPeriod = 1.0
 
 import requests
@@ -64,7 +64,7 @@ if not os.path.exists(path):
     except Exception as e:
         logger.exception(f"Failed to create directory {path}: {e}")
         exit()
-for size in ["small","normal"]:
+for size in imageSizeDesired:
     path = os.path.join(baseDir,"satelliteImages", size)
     if not os.path.exists(path):
         try:
@@ -105,10 +105,10 @@ for image in availableImages['available']['query']:
 
     # print(imageUrl)
     # now we download the image, but only the larger images...
-    if imageSize == imageSizeDesired:
+    if imageSize in imageSizeDesired:
 
         # if we run this often, we might already have the file, so let's check for that first...
-        filename = f'{baseDir}/satelliteImages/{imageSizeDesired}/{area}/{imageType}/{imageDate}.png'
+        filename = f'{baseDir}/satelliteImages/{imageSizeDesired[imageSizeDesired.index(imageSize)]}/{area}/{imageType}/{imageDate}.png'
         if not os.path.exists(filename):
             newFiles = True
             # logger.info(f"Getting {imageUrl} to save to {filename}")
@@ -187,11 +187,13 @@ htmlContent = ""
 
 for area in fields['area']:
     for spectrum in fields['type']:
-        if os.path.exists(f"satelliteImages/{imageSizeDesired}/{area}/{spectrum}/animated.gif"):
+        if os.path.exists(f"satelliteImages/{imageSizeDesired[0]}/{area}/{spectrum}/animated.gif"):
           htmlContent += f"""
           <h2>{area} image in {spectrum} spectrum</h2>
           <center>
-            <img src="{imageSizeDesired}/{area}/{spectrum}/animated.gif" alt="{area} image in {spectrum} spectrum">
+            <a href="{imageSizeDesired[1]}/{area}/{spectrum}/animated.gif">
+              <img src="{imageSizeDesired[0]}/{area}/{spectrum}/animated.gif" alt="{area} image in {spectrum} spectrum">
+            </a>
           </center>
           <br />
           """
