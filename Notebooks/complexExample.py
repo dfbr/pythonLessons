@@ -16,7 +16,7 @@ from PIL import Image
 import logging
 
 logger = logging.getLogger(__name__)
-logfilename = f"{baseDir}/{datetime.date.today().strftime('%Y%m%d')}.log"
+logfilename = f"{baseDir}/satelliteImages/{datetime.date.today().strftime('%Y%m%d')}.log"
 logging.basicConfig(filename=logfilename,level=logging.INFO,format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger.info(f"Starting processing")
 # set the user agent
