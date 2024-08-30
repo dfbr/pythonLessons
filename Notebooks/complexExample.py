@@ -128,8 +128,9 @@ for image in availableImages['available']['query']:
             # met.no don't like too many requests at a time so
             # we make our program wait half a second after each file
             sleep(sleepPeriod)
-        else:
-            logger.info(f"File: {filename} already existed")
+        # this turned out to be overkill
+        # else:
+        #     logger.info(f"File: {filename} already existed")
 
 def makeAnimatedGifFromPngsInDirectory(directory):
     # first we get a list of all the png images in the directory
@@ -144,15 +145,18 @@ def makeAnimatedGifFromPngsInDirectory(directory):
         frames = []
 
         for i in pngImages:
-            new_frame = Image.open(i)
-            frames.append(new_frame)
+            try:
+                new_frame = Image.open(i)
+                frames.append(new_frame)
+            except Exception as e:
+                logger.exception(f"Got exception trying to add an image frame: {e}")
 
         # Save into a GIF file that loops forever
         animatedGifFilename = f'{directory}\\animated.gif'
         frames[0].save(animatedGifFilename, format='GIF',
                     append_images=frames[1:],
                     save_all=True,
-                    duration=300, loop=0)
+                    duration=30/len(frames), loop=0, subrectangles=True)
         logger.info(f"Finished creating animated gif {animatedGifFilename}")
         return animatedGifFilename
 
