@@ -3,7 +3,7 @@
 # First we need to get a list of the images that are available.
 baseDir = "."
 imageSizeDesired = ["small","normal"] # options are "small" or "normal"
-sleepPeriod = 1.0
+sleepPeriod = 0.2
 
 import requests
 import xmltodict
@@ -153,6 +153,7 @@ def makeAnimatedGifFromPngsInDirectory(directory):
 
         # Save into a GIF file that loops forever
         animatedGifFilename = f'{directory}/animated.gif'
+        print(animatedGifFilename)
         frames[0].save(animatedGifFilename, format='GIF',
                     append_images=frames[1:],
                     save_all=True,
@@ -170,7 +171,10 @@ if newFiles:
                 print(f"{baseDir}/satelliteImages/{imageSize}/{area}/{spectrum}")
 
     for directory in directories:
-        result = makeAnimatedGifFromPngsInDirectory(directory)
+        try:
+            result = makeAnimatedGifFromPngsInDirectory(directory)
+        except Exception as e:
+            logger.exception("Error making animated gif for {directory}: {e}")
 
 
 htmlHeader = f"""
