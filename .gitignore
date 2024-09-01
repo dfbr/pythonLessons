@@ -1,2 +1,5 @@
-Notebooks/satellite*
+Notebooks/satelliteImages/*
 Notebooks/*.log
+satelliteImages/normal/*
+satelliteImages/small/*
+satelliteImages/*.log
