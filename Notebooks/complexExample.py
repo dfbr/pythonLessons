@@ -152,11 +152,11 @@ def makeAnimatedGifFromPngsInDirectory(directory):
                 logger.exception(f"Got exception trying to add an image frame: {e}")
 
         # Save into a GIF file that loops forever
-        animatedGifFilename = f'{directory}\\animated.gif'
+        animatedGifFilename = f'{directory}/animated.gif'
         frames[0].save(animatedGifFilename, format='GIF',
                     append_images=frames[1:],
                     save_all=True,
-                    duration=30/len(frames), loop=0, subrectangles=True)
+                    duration=(30/len(frames)), loop=0, subrectangles=True)
         logger.info(f"Finished creating animated gif {animatedGifFilename}")
         return animatedGifFilename
 
@@ -165,7 +165,9 @@ if newFiles:
     directories = []
     for area in fields['area']:
         for spectrum in fields['type']:
-            directories.append(f"{baseDir}/satelliteImages/{imageSizeDesired}/{area}/{spectrum}")
+            for imageSize in imageSizeDesired:
+                directories.append(f"{baseDir}/satelliteImages/{imageSize}/{area}/{spectrum}")
+                print(f"{baseDir}/satelliteImages/{imageSize}/{area}/{spectrum}")
 
     for directory in directories:
         result = makeAnimatedGifFromPngsInDirectory(directory)
