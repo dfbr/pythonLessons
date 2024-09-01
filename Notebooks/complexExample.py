@@ -153,7 +153,7 @@ def makeAnimatedGifFromPngsInDirectory(directory):
 
         # Save into a GIF file that loops forever
         animatedGifFilename = f'{directory}/animated.gif'
-        print(animatedGifFilename)
+        # print(animatedGifFilename)
         frames[0].save(animatedGifFilename, format='GIF',
                     append_images=frames[1:],
                     save_all=True,
@@ -168,7 +168,7 @@ if newFiles:
         for spectrum in fields['type']:
             for imageSize in imageSizeDesired:
                 directories.append(f"{baseDir}/satelliteImages/{imageSize}/{area}/{spectrum}")
-                print(f"{baseDir}/satelliteImages/{imageSize}/{area}/{spectrum}")
+                # print(f"{baseDir}/satelliteImages/{imageSize}/{area}/{spectrum}")
 
     for directory in directories:
         try:
