@@ -103,20 +103,16 @@ for image in availableImages['available']['query']:
     imageType = image['parameter'][3]['value']
     imageUrl = image['uri']
 
-    # print(imageUrl)
     # now we download the image, but only the larger images...
     if imageSize in imageSizeDesired:
-
         # if we run this often, we might already have the file, so let's check for that first...
         filename = f'{baseDir}/satelliteImages/{imageSizeDesired[imageSizeDesired.index(imageSize)]}/{area}/{imageType}/{imageDate}.png'
         if not os.path.exists(filename):
             newFiles = True
-            # logger.info(f"Getting {imageUrl} to save to {filename}")
             response = requests.get(imageUrl, stream=True, headers=headers)
             logger.info(f"Got {imageUrl} with status code {response.status_code}")
 
-            if response.ok:    
-                # logger.info(f"Writing {imageUrl} to save to {filename}")            
+            if response.ok:         
                 with open(filename, 'wb') as out_file:
                     response.raw.decode_content = True
                     shutil.copyfileobj(response.raw, out_file)
@@ -128,9 +124,6 @@ for image in availableImages['available']['query']:
             # met.no don't like too many requests at a time so
             # we make our program wait half a second after each file
             sleep(sleepPeriod)
-        # this turned out to be overkill
-        # else:
-        #     logger.info(f"File: {filename} already existed")
 
 def makeAnimatedGifFromPngsInDirectory(directory):
     # first we get a list of all the png images in the directory
@@ -144,7 +137,7 @@ def makeAnimatedGifFromPngsInDirectory(directory):
         # now create one frame for each PNG image
         frames = []
 
-        for i in pngImages:
+        for i in pngImages[-200:]:
             try:
                 new_frame = Image.open(i)
                 frames.append(new_frame)
@@ -157,7 +150,7 @@ def makeAnimatedGifFromPngsInDirectory(directory):
         frames[0].save(animatedGifFilename, format='GIF',
                     append_images=frames[1:],
                     save_all=True,
-                    duration=(30/len(frames)), loop=0, subrectangles=True)
+                    duration=300, loop=0, subrectangles=True)
         logger.info(f"Finished creating animated gif {animatedGifFilename}")
         return animatedGifFilename
 
@@ -193,12 +186,12 @@ htmlContent = ""
 
 for area in fields['area']:
     for spectrum in fields['type']:
-        if os.path.exists(f"satelliteImages/{imageSizeDesired[0]}/{area}/{spectrum}/animated.gif"):
+        if os.path.exists(f"satelliteImages/{imageSizeDesired[0]}/{area}/{spectrum}/animated.gif") and os.path.exists(f"satelliteImages/{imageSizeDesired[1]}/{area}/{spectrum}/animated.gif"):
           htmlContent += f"""
           <h2>{area} image in {spectrum} spectrum</h2>
           <center>
-            <a href="{imageSizeDesired[1]}/{area}/{spectrum}/animated.gif">
-              <img src="{imageSizeDesired[0]}/{area}/{spectrum}/animated.gif" alt="{area} image in {spectrum} spectrum">
+            <a href="normal/{area}/{spectrum}/animated.gif">
+              <img src="small/{area}/{spectrum}/animated.gif" alt="{area} image in {spectrum} spectrum">
             </a>
           </center>
           <br />
