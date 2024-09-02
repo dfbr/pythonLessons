@@ -144,11 +144,10 @@ def makeAnimatedGifFromPngsInDirectory(directory):
                 new_frame = Image.open(i)
                 frames.append(new_frame)
             except Exception as e:
-                logger.exception(f"Got exception trying to add an image frame: {e}")
+                logger.exception(f"Got exception trying to add a image {i} to frame: {e}")
 
         # Save into a GIF file that loops forever
         animatedGifFilename = f'{directory}/animated.gif'
-        # print(animatedGifFilename)
         try:
             frames[0].save(animatedGifFilename, format='GIF',
                         append_images=frames[1:],
@@ -169,12 +168,15 @@ if newFiles:
         for spectrum in fields['type']:
             for imageSize in imageSizeDesired:
                 directories.append(f"{baseDir}/satelliteImages/{imageSize}/{area}/{spectrum}")
-                # print(f"{baseDir}/satelliteImages/{imageSize}/{area}/{spectrum}")
 
     # with concurrent.futures.ThreadPoolExecutor() as executor:
     #     results = list(executor.map(makeAnimatedGifFromPngsInDirectory,directories))
     for directory in directories:
-        makeAnimatedGifFromPngsInDirectory(directory=directory)
+        result = makeAnimatedGifFromPngsInDirectory(directory=directory)
+        if result == False:
+            logger.error(f"Error creating animated gif in {directory}")
+        else:
+            logger.info(f"Created animated.gif in {directory}")
 
 
 htmlHeader = f"""
