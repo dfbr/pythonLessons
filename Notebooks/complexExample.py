@@ -7,13 +7,14 @@ sleepPeriod = 0.2
 
 import requests
 import xmltodict
-import os
+import os 
 import shutil
 from time import sleep
 import datetime
 import glob
 from PIL import Image
 import logging
+import concurrent.futures
 
 logger = logging.getLogger(__name__)
 logfilename = f"{baseDir}/satelliteImages/{datetime.date.today().strftime('%Y%m%d')}.log"
@@ -55,7 +56,7 @@ for image in availableImages['available']['query']:
         elif detail['value'] not in fields[detail['name']]:
             fields[detail['name']].append(detail['value'])
 
-
+#region make directories if they don't already exist
 path = os.path.join(baseDir,"satelliteImages")
 if not os.path.exists(path):
     try:
@@ -92,7 +93,7 @@ for size in imageSizeDesired:
                 except Exception as e:
                     logger.exception(f"Failed to create directory {path}: {e}")
                     exit()
-
+#endregion
 
 newFiles = False
 for image in availableImages['available']['query']:
@@ -109,7 +110,15 @@ for image in availableImages['available']['query']:
         filename = f'{baseDir}/satelliteImages/{imageSizeDesired[imageSizeDesired.index(imageSize)]}/{area}/{imageType}/{imageDate}.png'
         if not os.path.exists(filename):
             newFiles = True
-            response = requests.get(imageUrl, stream=True, headers=headers)
+            try:
+                # met.no don't like too many requests at a time so
+                # we make our program wait half a second after each file
+                sleep(sleepPeriod)
+                response = requests.get(imageUrl, stream=True, headers=headers)
+            except Exception as e:
+                logger.exception(f"Error downloading {imageUrl}, got {response.status_code}")
+                print(f"Error downloading {imageUrl}, got {response.status_code}")
+                pass
             logger.info(f"Got {imageUrl} with status code {response.status_code}")
 
             if response.ok:         
@@ -117,13 +126,6 @@ for image in availableImages['available']['query']:
                     response.raw.decode_content = True
                     shutil.copyfileobj(response.raw, out_file)
                 logger.info(f"Wrote {imageUrl} to {filename}")
-            else:
-                logger.exception(f"Error downloading {imageUrl}, got {response.status_code}")
-                print(f"Error downloading {imageUrl}, got {response.status_code}")
-                # exit()
-            # met.no don't like too many requests at a time so
-            # we make our program wait half a second after each file
-            sleep(sleepPeriod)
 
 def makeAnimatedGifFromPngsInDirectory(directory):
     # first we get a list of all the png images in the directory
@@ -147,13 +149,19 @@ def makeAnimatedGifFromPngsInDirectory(directory):
         # Save into a GIF file that loops forever
         animatedGifFilename = f'{directory}/animated.gif'
         # print(animatedGifFilename)
-        frames[0].save(animatedGifFilename, format='GIF',
-                    append_images=frames[1:],
-                    save_all=True,
-                    duration=300, loop=0, subrectangles=True)
-        logger.info(f"Finished creating animated gif {animatedGifFilename}")
+        try:
+            frames[0].save(animatedGifFilename, format='GIF',
+                        append_images=frames[1:],
+                        save_all=True,
+                        duration=300, loop=0, subrectangles=True)
+            logger.info(f"Finished creating animated gif {animatedGifFilename}")
+        except Exception as e:
+            logger.exception(f"Failed to create {animatedGifFilename}")
+            return False
         return animatedGifFilename
-
+    else:
+        return False
+    
 # now we can run our function on each of our directories.
 if newFiles:
     directories = []
@@ -163,11 +171,8 @@ if newFiles:
                 directories.append(f"{baseDir}/satelliteImages/{imageSize}/{area}/{spectrum}")
                 # print(f"{baseDir}/satelliteImages/{imageSize}/{area}/{spectrum}")
 
-    for directory in directories:
-        try:
-            result = makeAnimatedGifFromPngsInDirectory(directory)
-        except Exception as e:
-            logger.exception("Error making animated gif for {directory}: {e}")
+    with concurrent.futures.ThreadPoolExecutor() as executor:
+        results = list(executor.map(makeAnimatedGifFromPngsInDirectory,directories))
 
 
 htmlHeader = f"""
@@ -186,11 +191,17 @@ htmlContent = ""
 
 for area in fields['area']:
     for spectrum in fields['type']:
-        if os.path.exists(f"satelliteImages/{imageSizeDesired[0]}/{area}/{spectrum}/animated.gif") and os.path.exists(f"satelliteImages/{imageSizeDesired[1]}/{area}/{spectrum}/animated.gif"):
+        normalExists = os.path.exists(f"satelliteImages/{imageSizeDesired[1]}/{area}/{spectrum}/animated.gif")
+        smallExists = os.path.exists(f"satelliteImages/{imageSizeDesired[0]}/{area}/{spectrum}/animated.gif")
+        if normalExists:
+          linkHref = (f"normal/{area}/{spectrum}/animated.gif")
+        else:
+          linkHref = (f"small/{area}/{spectrum}/animated.gif")
+        if smallExists:
           htmlContent += f"""
           <h2>{area} image in {spectrum} spectrum</h2>
           <center>
-            <a href="normal/{area}/{spectrum}/animated.gif">
+            <a href="{linkHref}">
               <img src="small/{area}/{spectrum}/animated.gif" alt="{area} image in {spectrum} spectrum">
             </a>
           </center>
