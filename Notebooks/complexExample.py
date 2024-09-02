@@ -139,7 +139,7 @@ def makeAnimatedGifFromPngsInDirectory(directory):
         # now create one frame for each PNG image
         frames = []
 
-        for i in pngImages[-200:]:
+        for i in pngImages:
             try:
                 new_frame = Image.open(i)
                 frames.append(new_frame)
