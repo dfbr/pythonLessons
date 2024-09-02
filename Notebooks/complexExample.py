@@ -171,8 +171,10 @@ if newFiles:
                 directories.append(f"{baseDir}/satelliteImages/{imageSize}/{area}/{spectrum}")
                 # print(f"{baseDir}/satelliteImages/{imageSize}/{area}/{spectrum}")
 
-    with concurrent.futures.ThreadPoolExecutor() as executor:
-        results = list(executor.map(makeAnimatedGifFromPngsInDirectory,directories))
+    # with concurrent.futures.ThreadPoolExecutor() as executor:
+    #     results = list(executor.map(makeAnimatedGifFromPngsInDirectory,directories))
+    for directory in directories:
+        makeAnimatedGifFromPngsInDirectory(directory=directory)
 
 
 htmlHeader = f"""
@@ -207,6 +209,8 @@ for area in fields['area']:
           </center>
           <br />
           """
+        else:
+            htmlContent += (f"<!-- didn't find satelliteImages/{imageSizeDesired[0]}/{area}/{spectrum}/animated.gif -->")
 
 # now we want to combine our html
 overallHtml = htmlHeader + htmlContent + htmlFooter
