@@ -33,7 +33,7 @@ We need to give Python a **condition** that it can evaluate. This is the `timeOf
 
 Note the double `==` sign. This doesn't assign a value to a variable, instead it asks the question **is the value on the left equal to the value on the right?**.
 
-The condition doesn't have to be `==`. It can be anything that evaluates to **True** or **False**.
+The condition doesn't have to be `==`. It can be anything that evaluates to **True** or **False**. You can use many different [comparison operators](https://www.w3schools.com/python/gloss_python_comparison_operators.asp) and even make your own.
 
 Let's [try it out](http://colab.research.google.com/github/dfbr/pythonLessons/blob/main/Notebooks/choices.ipynb)! (Ctrl/Command/Shift click on link to open in a new tab/window)
 

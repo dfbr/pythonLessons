@@ -72,6 +72,8 @@ Let's [try it out](http://colab.research.google.com/github/dfbr/pythonLessons/bl
 
 Sometimes we have a lot variables that belong together. They may belong together because they're a group (like all of your names as members of this class), they may belong together because you want to do similar things with all of the different variables.
 
+If you have used other programming languages, this may be familiar to you but you might recognise it as an *array*. For our purposes, arrays and lists are the same.
+
 We could have a variable for each different member of the group:
 
 ```python
@@ -81,7 +83,9 @@ classMember3 = "Sarah"
 classMembern = "Zoe"
 ```
 
-This works but becomes hard to manage. A better way is to group all of the class members together in a variable that is of the **list** type:
+This works but becomes hard to manage. If we want to print all of the members of the group we would need to have a print statement for each member or if Bjørn leaves the class would we need to shift up each member by one? 
+
+A better way is to group all of the class members together in a variable that is of the **list** type:
 
 ```python
 # here we define our list
@@ -90,7 +94,7 @@ classMembers = ["David",
                 "Sarah",
                 "Zoe"]
 
-# now we can use it in our program
+# now we can use classMembers in our program
 ```
 
 We can then add and remove people from the list or perform tasks against each member of the list.
