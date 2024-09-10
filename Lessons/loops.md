@@ -49,3 +49,5 @@ Let's [play with for loops](http://colab.research.google.com/github/dfbr/pythonL
 
 - [While loops](https://www.geeksforgeeks.org/python-while-loop/)
 - [For loops](https://www.geeksforgeeks.org/python-for-loops/)
+
+## [Next lesson](externalCode.md)

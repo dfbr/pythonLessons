@@ -51,3 +51,4 @@ Let's [try it out](http://colab.research.google.com/github/dfbr/pythonLessons/bl
 
 [![If statements](https://img.youtube.com/vi/-BOBedcjySI/maxresdefault.jpg)](https://www.youtube.com/watch?v=-BOBedcjySI)
 
+## [Next lesson](loops.md)

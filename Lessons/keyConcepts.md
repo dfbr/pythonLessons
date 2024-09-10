@@ -138,3 +138,5 @@ Let's [try it out](http://colab.research.google.com/github/dfbr/pythonLessons/bl
 
 - [Lists](https://www.w3schools.com/python/python_lists.asp)
 - [Dictionaries](https://www.w3schools.com/python/python_dictionaries.asp)
+
+## [Next lesson](makeChoices.md)

@@ -20,3 +20,6 @@ You will probably need to click `Run anyway` when you open these notebooks.
 ## Extra resources
 
 - [What is a Jupyter notebook?](https://docs.jupyter.org/en/latest/#what-is-a-notebook)
+
+
+## [Next lesson](keyConcepts.md)

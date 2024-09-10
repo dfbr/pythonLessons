@@ -66,3 +66,5 @@ Try it with this:
 - We will need to search for a package
 - We will need to read the documentation to use a package
 - When we use someone else's script, we may need to edit it
+
+## [Next lesson](programmingErrors.md)

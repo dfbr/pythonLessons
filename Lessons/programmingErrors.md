@@ -10,3 +10,5 @@ In this exercise I've set up a Jupyter notebook with some _classic_ programming 
 
 - [google.no](https://google.no)
 - [Stack Overflow](https://stackoverflow.com/)
+
+## [Next lesson](exportScript.md)
