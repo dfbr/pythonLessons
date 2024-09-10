@@ -98,6 +98,6 @@ https://stackoverflow.com/questions/52131683/open-google-colab-notebook-from-url
 
 - Python is a programming language
 - We will use version 3
-- We are going program using Jupyter notebooks in [Google colab](https://colab.research.google.com/){:target="_blank"}.
+- We are going program using Jupyter notebooks in [Google colab](https://colab.research.google.com/). (Recommend Ctrl/Command/Shift click on link to open in a new tab/window)
 
 ## [Next lesson](jupyterNotebook.md)

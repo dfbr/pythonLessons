@@ -18,7 +18,7 @@ while volume > 50:
     volume -= 1
 print("When the condition is no longer true, we continue with our script")
 ```
-Let's [try it out](http://colab.research.google.com/github/dfbr/pythonLessons/blob/main/Notebooks/whileLoops.ipynb)
+Let's [try it out](http://colab.research.google.com/github/dfbr/pythonLessons/blob/main/Notebooks/whileLoops.ipynb) (Ctrl/Command/Shift click on link to open in a new tab/window)
 
 ## For loops
 
@@ -38,7 +38,7 @@ for item in myList:
     print(f"{item} doubled is {item * 2}")
 ```
 
-Let's [play with for loops](http://colab.research.google.com/github/dfbr/pythonLessons/blob/main/Notebooks/forLoops.ipynb)
+Let's [play with for loops](http://colab.research.google.com/github/dfbr/pythonLessons/blob/main/Notebooks/forLoops.ipynb) (Ctrl/Command/Shift click on link to open in a new tab/window)
 
 ## Key points
 

@@ -2,7 +2,7 @@
 
 Here we'll walk through a more complex example Jupyter notebook.
 
-[Open it up](http://colab.research.google.com/github/dfbr/pythonLessons/blob/main/Notebooks/complexExample.ipynb)!
+[Open it up](http://colab.research.google.com/github/dfbr/pythonLessons/blob/main/Notebooks/complexExample.ipynb)! (Ctrl/Command/Shift click on link to open in a new tab/window)
 
 The example does the following tasks...
 

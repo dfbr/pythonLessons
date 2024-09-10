@@ -58,7 +58,7 @@ Try it with this:
 - Use the example script to resize the images in your directory to 500 x 500
 - Save them with the the word `resized_` prepended to the filename
 
-[Try it out](https://colab.research.google.com/).
+[Try it out](https://colab.research.google.com/). (Ctrl/Command/Shift click on link to open in a new tab/window)
 
 ## Key points
 

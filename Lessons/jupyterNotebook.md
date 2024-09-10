@@ -4,7 +4,7 @@ This is your chance to get to know a bit about Jupyter notebooks. We'll go throu
 
 The first thing to do is open Google Colab at [https://colab.research.google.com/](https://colab.research.google.com/). This gives us a blank Jupyter notebook. 
 
-Now lets have a look at an [example notebook](http://colab.research.google.com/github/dfbr/pythonLessons/blob/main/Notebooks/jupyter.ipynb).
+Now lets have a look at an [example notebook](http://colab.research.google.com/github/dfbr/pythonLessons/blob/main/Notebooks/jupyter.ipynb). (Ctrl/Command/Shift click on link to open in a new tab/window)
 
 Throughout this course, we'll be using links directly to examples for exercises and examples (like the one above). 
 

@@ -35,7 +35,7 @@ Note the double `==` sign. This doesn't assign a value to a variable, instead it
 
 The condition doesn't have to be `==`. It can be anything that evaluates to **True** or **False**.
 
-Let's [try it out](http://colab.research.google.com/github/dfbr/pythonLessons/blob/main/Notebooks/choices.ipynb)!
+Let's [try it out](http://colab.research.google.com/github/dfbr/pythonLessons/blob/main/Notebooks/choices.ipynb)! (Ctrl/Command/Shift click on link to open in a new tab/window)
 
 ## Key points
 
