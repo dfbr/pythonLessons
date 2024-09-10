@@ -1,6 +1,10 @@
 # What is Python?
 
-Python is a programming language. 
+Python is a programming language. It's logo is a Python:
+
+![Python logo](https://www.python.org/static/community_logos/python-logo-master-v3-TM.png)
+
+This is the only time you'll see a snake in this course!
 
 A programming language is a way of asking a computer to do something. The thing you're asking the computer to do can be called "code", a "program" or a "script". They are all subtley different but for our purposes they all mean things that you ask the computer to do. I'll probably use all of these terms as we go through the course.
 
