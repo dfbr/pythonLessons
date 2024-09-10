@@ -66,7 +66,7 @@ The `+=` operator is shorthand for saying "add what's on the right to the variab
 
 The variable name is case sensitive so `MYVARIABLENAME` and `myvariablename` are two different variables.
 
-Let's [try it out](http://colab.research.google.com/github/dfbr/pythonLessons/blob/main/Notebooks/variables.ipynb)!
+Let's [try it out](http://colab.research.google.com/github/dfbr/pythonLessons/blob/main/Notebooks/variables.ipynb)! (Ctrl/Command/Shift click on link to open in a new tab/window)
 
 ## Lists
 
@@ -95,7 +95,7 @@ classMembers = ["David",
 
 We can then add and remove people from the list or perform tasks against each member of the list.
 
-Let's [try it out](http://colab.research.google.com/github/dfbr/pythonLessons/blob/main/Notebooks/lists.ipynb)!
+Let's [try it out](http://colab.research.google.com/github/dfbr/pythonLessons/blob/main/Notebooks/lists.ipynb)! (Ctrl/Command/Shift click on link to open in a new tab/window)
 
 ## Dictionaries
 
