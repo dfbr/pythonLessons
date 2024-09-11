@@ -28,8 +28,8 @@ Computers are great at doing things for us. To get the most of them, it helps if
 ## Schedule
 
 Lessons:
-- Wednesday 18th September, 10am - 3pm
-- Wednesday 16th September, 10am - 3pm
+- Wednesday 18th September, 10am - 3pm RFB Auditorium 5
+- Wednesday 16th September, 10am - 3pm RFB Auditorium 5
 
 Drop-in session:
 - Thursday 26th September, 10am - 12 midday (location TBC)
