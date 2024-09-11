@@ -10,7 +10,7 @@ In this case we want to Download the script as a `.py` file (this may also be ca
 
 You then have your notebook as a script that can be run on your local computer (if you have Python installed) or any other computer where Python is installed.
 
-## Is python installed?
+## Is Python installed?
 
 To find out if Python is installed on a computer, the easiest way is to try and start it.
 
@@ -21,6 +21,10 @@ If you see a screen with a prompt like this `>>>`, you have Python installed
 ![Python prompt](../Images/PythonPrompt.png)
 
 To get out of the Python *interpreter* you need to issue the command `exit()`.
+
+## Install Python
+
+If you don't have Python installed on your laptop and would like to install it, there are some [instructions here](installPython.md)
 
 ## Now run the script
 

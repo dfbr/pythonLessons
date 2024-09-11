@@ -36,7 +36,7 @@ Jupyter:
 
 Please use google! Good luck :pray:
 
-## Development environment
+## Development environment/Editor
 
 Once you have Python and Jupyter installed, there are many different development environments in which you can use them.
 

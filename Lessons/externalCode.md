@@ -31,6 +31,8 @@ print(df.iloc[0])
 There are LOTS of packages for many, many different things. In fact, there are so many it's impossible to know what they all do so you will need to search for the right package for your task.
 
 Some common packages that _may_ be useful are:
+- os
+  - For interacting with the operating system of the computer
 - sys
   - For doing things like listing directory contents
 - datetime
@@ -50,15 +52,37 @@ Let's [try it out](http://colab.research.google.com/github/dfbr/pythonLessons/bl
 
 ## Using someone else's script
 
-You can of course use your favourite search engine to find a script that does what you want to do. But when things get specific it's unlikely that you'll find an exact match. You can copy a Python script into a blank notebook and start editing it from there. 
+You can of course use your [favourite search engine](https://duckduckgo.com/) to find a script that does what you want to do. But when things get specific it's unlikely that you'll find an exact match. You can copy a Python script into a blank notebook and start editing it from there. 
+
+### But what does that script *do*?
+
+You can of course read the script through to understand what it does. If the script is written clearly, it should be understandable. As I'm sure you've guessed, there are tools to help here. You can use [UiB's ChatGPT](https://chat.uib.no) to explain a script to you.
 
 Try it with this:
-- Use [example 4](https://medium.com/@estebanpiero/10-useful-python-scripts-for-everyday-tasks-b0d74f2ea62c) on this web page and copy it to a fresh notebook.
-- Make a new directory with some image files in it
+- Copy the example below to a new jupyter notebook.
+- Make a new directory/folder in the notebook called "images" and copy some image files to it
 - Use the example script to resize the images in your directory to 500 x 500
-- Save them with the the word `resized_` prepended to the filename
+- Save them with the the word `resized_` before to the original filename
+
+```python
+# first we import "Image" from the PIL package
+from PIL import Image
+# next we import the os package because we want to interact with files
+import os
+
+input_folder = './images'
+output_folder = './images'
+desired_size = (100, 100)
+
+for filename in os.listdir(input_folder):
+    with Image.open(os.path.join(input_folder, filename)) as img:
+        img.thumbnail(desired_size)
+        img.save(os.path.join(output_folder, filename))
+```
 
 [Try it out](https://colab.research.google.com/). (Ctrl/Command/Shift click on link to open in a new tab/window)
+
+You can of course also use ChatGPT to make these changes for you and providing you understand it's output (and can safely test it) then this is a perfectly acceptable way of programming.
 
 ## Key points
 

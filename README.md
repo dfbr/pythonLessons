@@ -25,6 +25,17 @@ Computers are great at doing things for us. To get the most of them, it helps if
 **Not required, but potentially useful**
 - A github account. Sign up at [https://github.com/signup](https://github.com/signup)
 
+## Schedule
+
+Lessons:
+- Wednesday 18th September, 10am - 3pm
+- Wednesday 16th September, 10am - 3pm
+
+Drop-in session:
+- Thursday 26th September, 10am - 12 midday (location TBC)
+
+The schedule will vary based on the speed of work but we will have a short (5-10 minute) break at around 11am, lunch (30 minutes) at around 12:30 and a further short break at around 2pm.
+
 ## Other help
 
 There will be a drop-in session (date and location TBC). Please come along with your Python questions for discussion and assistance.
@@ -32,6 +43,12 @@ There will be a drop-in session (date and location TBC). Please come along with 
 ## Other resources
 
 The internet is full of resources to help you learn Python. I have collected some good ones on the [resources](Lessons/resources.md) page.
+
+## Use of AI and programming tools
+
+The aim of this course is that you're able to understand, edit and write Python scripts to accomplish your own goals and those that are set in the rest of your course here at UiB. How you achieve these learning goals is up to you.
+
+If you find that using AI tools as a programming partner is useful then please use the tools to accelerate your learning. If however you [solely use AI](https://www.zdnet.com/article/how-to-use-chatgpt-to-write-code/) and don't understand the output then you may need to use your own real intelligence further!
 
 ## Feedback
 
