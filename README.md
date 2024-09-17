@@ -1,8 +1,14 @@
 # Python Lessons
 
-This site contains the resources for the python lessons delivered by Dave Rowan @ UiB.
+This site contains the resources for the python lessons delivered by [Dave Rowan @ UiB](mailto:david.rowan@uib.no?subject=Python%20course).
 
 Computers are great at doing things for us. To get the most of them, it helps if we can ask them to do things for us. This course will help you do that by teaching you the fundamentals of Python, a programming language.
+
+**Please go to:**
+
+# [https://github.com/dfbr/pythonLessons](https://github.com/dfbr/pythonLessons)
+
+**to follow along with the course**
 
 ## Aims of the course
 - Understand [what Python is](Lessons/whatIsPython.md)
@@ -36,9 +42,17 @@ Drop-in session:
 
 The schedule will vary based on the speed of work but we will have a short (5-10 minute) break at around 11am, lunch (30 minutes) at around 12:30 and a further short break at around 2pm.
 
-## Other help
+## Workshop management
 
-There will be a drop-in session (date and location TBC). Please come along with your Python questions for discussion and assistance.
+- Please work in pairs with one computer between you. 
+- We'll talk about a concept or set of concepts, then try them out.
+- When you have finished an exercise, place a green sticky note showing on your computer
+- If you need help at any point, put a red sticky note on your computer
+- Ask questions whenever you like
+
+## Drop-in session
+
+Come with questions, problems etc and we'll work through them together. I will not do your homework but I will try and help you understand it!
 
 ## Other resources
 
