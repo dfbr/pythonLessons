@@ -44,9 +44,10 @@ We will follow a standard schedule of a 15 minute break per hour which will vary
 
 ## Workshop management
 
-- Please work in pairs with one computer between you. 
-- We'll talk about a concept or set of concepts, then try them out.
+- Please work in pairs with one computer between you
+- We'll talk about a concept or set of concepts, then try them out
 - When you have finished an exercise, place a green sticky note showing on your computer
+  - When everyone has finished, we'll talk about the answers
 - If you need help at any point, put a red sticky note on your computer
 - Ask questions whenever you like
 
