@@ -52,7 +52,9 @@ Let's [try it out](http://colab.research.google.com/github/dfbr/pythonLessons/bl
 
 ## Using someone else's script
 
-You can of course use your [favourite search engine](https://duckduckgo.com/) to find a script that does what you want to do. But when things get specific it's unlikely that you'll find an exact match. You can copy a Python script into a blank notebook and start editing it from there. 
+You can of course use your [favourite search engine](https://duckduckgo.com/) to find a script that does what you want to do (or ask a [friendly AI](https://chat.uib.no) to write one for you). But when things get specific it's unlikely that you'll find an exact match or get an exact program from your AI. 
+
+In this case, you can copy a Python script into a blank notebook and start editing it from there. 
 
 ### But what does that script *do*?
 
@@ -60,7 +62,7 @@ You can of course read the script through to understand what it does. If the scr
 
 Try it with this:
 - Copy the example below to a new jupyter notebook.
-- Make a new directory/folder in the notebook called "images" and copy some image files to it
+- Make a new directory/folder in the notebook called "images" and copy some image files to it (e.g. png, gif or jpeg files)
 - Use the example script to resize the images in your directory to 500 x 500
 - Save them with the the word `resized_` before to the original filename
 
