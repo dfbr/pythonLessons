@@ -67,6 +67,9 @@ If you find that using AI tools as a programming partner is useful then please u
 
 ## Feedback
 
+You can provide anonymous feedback at any time using the QR code here
+![QR code](./Images/QR_code_for_feedback.png)
+
 Please provide feedback on the course, content, delivery or direct questions at any point to [david.rowan@uib.no](mailto:david.rowan@uib.no?subject=Python%20course%20question%or%20correction).
 
 If you spot errors or want to make improvements to this course, please submit a pull request.
