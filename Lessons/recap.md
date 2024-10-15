@@ -29,7 +29,7 @@ In the last lesson we covered several topics. Here is a quick recap...
 - We can use Python to make choices using `if` statements.
   - The general form of an if statement is:
   
-  ```
+```
   if condition:
     do this
   elif secondCondition:
