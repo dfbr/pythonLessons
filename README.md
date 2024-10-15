@@ -15,6 +15,11 @@ Computers are great at doing things for us. To get the most of them, it helps if
 - Know what a [Jupyter notebook is](Lessons/jupyterNotebook.md) and be able to use notebooks
 - Understand some [key concepts of Python](Lessons/keyConcepts.md)
 - Use Python to [make choices](Lessons/makeChoices.md)
+
+
+- **[Review of last session](Lessons/recap.md)**
+
+
 - Use Python to do the same thing [again and again](Lessons/loops.md)
 - Use [other people's code](Lessons/externalCode.md)
 - Know how to start [investigating programming errors](Lessons/programmingErrors.md)
