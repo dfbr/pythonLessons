@@ -34,13 +34,17 @@ If you find other resources that you think are useful, please let me know so the
 
 ## Exercises and programming challenges
 
+- [Python programming challenges](https://pythonprinciples.com/challenges/)
+
 ## Other resources
+
+- [If statements](https://www.w3schools.com/python/python_conditions.asp)
 
 ## Other topics that can be great to know about
 
 ### Python
 
-- [Functions]() avoid repeating yourself by creating a function for tasks that you do a lot
+- [Functions](https://www.w3schools.com/python/python_functions.asp) avoid repeating yourself by creating a function for tasks that you do a lot
 
 
 ### Other programming related resources
