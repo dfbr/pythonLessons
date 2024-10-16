@@ -25,7 +25,7 @@ In the last lesson we covered several topics. Here is a quick recap...
 - A dictionary is a set of variables that belong together such as the different readings from a weather station
   - A dictionary is another type of variable
   - We define a dictionary as `dictionaryName = {dictionaryKey1: dictionaryValue1, dictionaryKey2: dictionaryValue2}`
-  - We access individual items in the dictionary with `dictionaryName['dictinaryKey1]`
+  - We access individual items in the dictionary with `dictionaryName['dictinaryKey1']`
 - We can use Python to make choices using `if` statements.
   - The general form of an if statement is:
   
