@@ -72,8 +72,8 @@ from PIL import Image
 # next we import the os package because we want to interact with files
 import os
 
-input_folder = './images'
-output_folder = './images'
+input_folder = '/content/images'
+output_folder = '/content/images'
 desired_size = (100, 100)
 
 for filename in os.listdir(input_folder):
