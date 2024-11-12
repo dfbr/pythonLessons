@@ -39,11 +39,11 @@ Computers are great at doing things for us. To get the most of them, it helps if
 ## Schedule
 
 Lessons:
-- ~~Wednesday 18th September, 12:15am - 4pm RFB Auditorium 5~~
-- Wednesday 16th October, 12:15am - 4pm RFB Auditorium 5
+- ~~Wednesday 18th September 2024, 12:15am - 4pm RFB Auditorium 5~~
+- ~~Wednesday 16th October 2024, 12:15am - 4pm RFB Auditorium 5~~
 
 Drop-in session:
-- Friday 4th October, 10:15am - 12 midday (GEO KvartSitten)
+- ~~Friday 4th October 2024, 10:15am - 12 midday (GEO KvartSitten)~~
 
 We will follow a standard schedule of a 15 minute break per hour which will vary slightly to break at a natural point.
 
